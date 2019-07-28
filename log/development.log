@@ -3840,3 +3840,9 @@ Processing by AuthorsController#index as HTML
 Completed 200 OK in 676ms (Views: 667.0ms | ActiveRecord: 0.8ms)
 
 
+Started GET "/authors/4" for 139.28.219.108 at 2019-07-28 12:21:44 +0000
+Cannot render console from 139.28.219.108! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering authors/show.html.erb within layouts/application
